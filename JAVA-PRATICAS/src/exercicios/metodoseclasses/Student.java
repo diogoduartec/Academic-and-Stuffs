@@ -1,9 +1,31 @@
 package exercicios.metodoseclasses;
 
 public class Student {
-    public String name;
-    public double[] grade;
-    public int age;
+    private String name;
+    private double[] grade;
+    private int age;
+
+    /*Modificadores de acesso*/
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setGrade(double... grade){
+        this.grade = grade;
+    }
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public double[] getGrade(){
+        return this.grade;
+    }
+    /*-----------------------------*/
     public void print(){
         System.out.println("Aluno: "+this.name);
         System.out.println("Idade: "+this.age);
@@ -12,6 +34,7 @@ public class Student {
             System.out.print(" "+x);
         }
     }
+
     public void average(){
         double sum = 0;
         for(double x: this.grade) {
