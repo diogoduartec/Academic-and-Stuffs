@@ -17,7 +17,8 @@ public class Student {
         for(double x: this.grade) {
             sum += x;
         }
-        if(sum/grade.length>=6) System.out.println("\nAprovado");
-        else System.out.println("\nReprovado");
+        System.out.println("\nA média é: "+sum/grade.length);
+        if(sum/grade.length>=6) System.out.println("Aprovado");
+        else System.out.println("Reprovado");
     }
 }
