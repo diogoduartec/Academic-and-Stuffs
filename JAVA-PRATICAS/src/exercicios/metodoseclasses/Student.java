@@ -1,9 +1,9 @@
 package exercicios.metodoseclasses;
 
 public class Student {
-    private String name;
-    private double[] grade;
-    private int age;
+    private String name = "Aluno";
+    private double[] grade = new double[]{0,0,0,0};
+    private int age = 0;
 
     /*Modificadores de acesso*/
     public void setName(String name){
@@ -13,7 +13,8 @@ public class Student {
         this.grade = grade;
     }
     public void setAge(int age){
-        this.age = age;
+        if(age<0) System.out.println("idade não pode ser menor que 0");
+        else this.age = age;
     }
 
     public String getName(){
@@ -26,6 +27,7 @@ public class Student {
         return this.grade;
     }
     /*-----------------------------*/
+
     public void print(){
         System.out.println("Aluno: "+this.name);
         System.out.println("Idade: "+this.age);
