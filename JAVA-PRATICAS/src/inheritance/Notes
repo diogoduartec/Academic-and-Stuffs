@@ -1,0 +1,6 @@
+-In the Java language, classes can be derived from other classes, thereby inheriting fiels and mathods frkm those classes.
+-A class that is derived from another class is called a SUBCLASS(also derrived classm extended class, or child class)
+-The class from which the subclass us derived is called a SUPERCLASS(also a base class, or parent class)
+-Classes can be derived from classes that are derived from classes the derived from classes, and so on, and ultumaty
+derive from the toonest class, Object. Such a class is sais to be descended drim all the classes in the inheritance
+chain streching bal to Object.
