@@ -7,6 +7,11 @@ package inheritance.classes;
 public class Employee extends Person{
     private double salary;
 
+    public void print(){
+        super.print();
+        System.out.println("Salary:"+this.salary);
+    }
+
     public double getSalary() {
         return salary;
     }
