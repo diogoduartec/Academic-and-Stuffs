@@ -11,7 +11,9 @@ public class Employee extends Person{
         super.print();
         System.out.println("Salary:"+this.salary);
     }
-
+    public void printReceiptOfPayment(){
+        System.out.println("I "+super.name+" got "+this.salary);
+    }
     public double getSalary() {
         return salary;
     }

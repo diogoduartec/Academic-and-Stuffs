@@ -5,9 +5,9 @@ package inheritance.classes;
  * Introduction to inheritance
  */
 public class Person {
-    private String name;
-    private String cpf;
-    private Address address;
+    protected String name;
+    protected String cpf;
+    protected Address address;
 
     public void print(){
         System.out.println("Name: "+this.name);
