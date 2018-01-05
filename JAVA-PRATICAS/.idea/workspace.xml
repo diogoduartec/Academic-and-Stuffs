@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c11fb7a-4229-4d82-9395-45093531c6b5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/checkedexception/classes/Reader1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/checkedexception/classes/Reader2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/checkedexception/test/TryWithResourcesCatch.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/error/test/ExceptionTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/rutimeexception/test/MultipleRuntimeExceptionTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/rutimeexception/test/RuntimeExceptionTest.java" />
@@ -59,8 +62,8 @@
       <file leaf-file-name="CheckedExceptionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/test/CheckedExceptionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#171#172#0" expanded="true" />
@@ -70,11 +73,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultipleRuntimeExceptionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultipleRuntimeExceptionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/exception/rutimeexception/test/MultipleRuntimeExceptionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="242">
+              <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TryWithResourcesCatch.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/test/TryWithResourcesCatch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reader1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/classes/Reader1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reader2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/classes/Reader2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -103,9 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/blocodeinicializacao/tests/ClientTest.java" />
-        <option value="$PROJECT_DIR$/src/sobrecargaconstrutores/classes/Student.java" />
-        <option value="$PROJECT_DIR$/src/blocodeinicializacao/classes/Client.java" />
         <option value="$PROJECT_DIR$/src/staticmodifier/classes/Car.java" />
         <option value="$PROJECT_DIR$/src/staticmodifier/tests/Client.java" />
         <option value="$PROJECT_DIR$/src/staticmodifier/tests/ClientTest.java" />
@@ -154,10 +190,13 @@
         <option value="$PROJECT_DIR$/src/exception/error/test/ExceptionTest.java" />
         <option value="$PROJECT_DIR$/src/exception/checkedexception/test/CheckedExceptionTest.java" />
         <option value="$PROJECT_DIR$/src/exception/rutimeexception/test/MultipleRuntimeExceptionTest.java" />
+        <option value="$PROJECT_DIR$/src/exception/checkedexception/classes/Reader1.java" />
+        <option value="$PROJECT_DIR$/src/exception/checkedexception/classes/Reader2.java" />
+        <option value="$PROJECT_DIR$/src/exception/checkedexception/test/TryWithResourcesCatch.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -208,6 +247,22 @@
               <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="checkedexception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="checkedexception" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="checkedexception" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -238,7 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MultipleRuntimeExceptionTest">
+  <component name="RunManager" selected="Application.TryWithResourcesCatch">
     <configuration name="CheckedExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -247,25 +302,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="exception.checkedexception.test.CheckedExceptionTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PRATICA" />
-      <envs />
-    </configuration>
-    <configuration name="DAOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="polymorphism.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="polymorphism.test.DAOTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -323,6 +359,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="exception.rutimeexception.test.RuntimeExceptionTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PRATICA" />
+      <envs />
+    </configuration>
+    <configuration name="TryWithResourcesCatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="exception.checkedexception.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="exception.checkedexception.test.TryWithResourcesCatch" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -416,19 +471,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DAOTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ExceptionTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.RuntimeExceptionTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CheckedExceptionTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MultipleRuntimeExceptionTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ExceptionTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RuntimeExceptionTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CheckedExceptionTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MultipleRuntimeExceptionTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TryWithResourcesCatch" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MultipleRuntimeExceptionTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CheckedExceptionTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RuntimeExceptionTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ExceptionTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DAOTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TryWithResourcesCatch" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MultipleRuntimeExceptionTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CheckedExceptionTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RuntimeExceptionTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ExceptionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +501,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -532,21 +587,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/staticmodifier/tests/CarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/staticmodifier/classes/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="83" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/associationclass/tests/Person.java" />
     <entry file="file://$PROJECT_DIR$/src/staticmodifier/tests/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -854,10 +894,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/rutimeexception/test/MultipleRuntimeExceptionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/classes/Reader1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/classes/Reader2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/test/CheckedExceptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#171#172#0" expanded="true" />
@@ -866,11 +932,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/rutimeexception/test/MultipleRuntimeExceptionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/exception/checkedexception/test/TryWithResourcesCatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="55">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
