@@ -1,5 +1,9 @@
 package wrappers;
-
+/**
+ * Date 08/01/2018
+ * @autor Diogo Duarte
+ * Practicing Wrappers Classes
+ */
 public class WrappersTest {
     byte bytePrimitive = 1;
     short shortPrimitive = 1;
@@ -24,5 +28,5 @@ public class WrappersTest {
     int i = integerWrapper;
     String str = "100";
     float f = Float.parseFloat(str);
-    
+
 }
