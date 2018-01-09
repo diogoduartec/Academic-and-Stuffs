@@ -1,3 +1,8 @@
+/**
+ * Create on 09/01/2018
+ * By Diogo Duarte
+ * Practicing Locale Class
+ */
 package date.test;
 import java.text.DateFormat;
 import java.util.Calendar;

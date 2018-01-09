@@ -1,3 +1,9 @@
+/**
+ * Create on 09/01/2018
+ * By Diogo Duarte
+ * Practicing DateManipulation Class
+ */
+
 package date.test;
 import java.util.Calendar;
 import java.util.Date;
