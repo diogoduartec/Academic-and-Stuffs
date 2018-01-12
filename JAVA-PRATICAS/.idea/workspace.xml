@@ -29,6 +29,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/polymorphism/test/DAOTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/polymorphism/test/PolymorphismTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/regularexpressions/test/RegularExpressionsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/regularexpressions/test/TokenTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/strings/test/StringBuilderTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/strings/test/StringPerformanceTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/strings/test/StringTest.java" />
@@ -57,7 +58,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TokenTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/regularexpressions/test/TokenTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="2116" column="0" lean-forward="false" selection-start-line="2116" selection-start-column="0" selection-end-line="2116" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/exercicios/associationsclassexercises/tests/AssociationClassTest.java" />
         <option value="$PROJECT_DIR$/src/exercicios/associationsclassexercises/problem.txt" />
         <option value="$PROJECT_DIR$/src/inheritance/Notes" />
         <option value="$PROJECT_DIR$/src/inheritance/classes/Address.java" />
@@ -131,10 +152,11 @@
         <option value="$PROJECT_DIR$/src/date/test/DateFormatTest.java" />
         <option value="$PROJECT_DIR$/src/date/test/DateManipulationTest.java" />
         <option value="$PROJECT_DIR$/src/regularexpressions/test/RegularExpressionsTest.java" />
+        <option value="$PROJECT_DIR$/src/regularexpressions/test/TokenTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -158,9 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,11 +192,20 @@
               <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RegularExpressionsTest">
+  <component name="RunManager" selected="Application.TokenTest">
     <configuration name="DateFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -214,25 +242,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="date.test.DateFormatTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PRATICA" />
-      <envs />
-    </configuration>
-    <configuration name="DateManipulationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="date.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="date.test.DateManipulationTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -290,6 +299,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="regularexpressions.test.RegularExpressionsTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PRATICA" />
+      <envs />
+    </configuration>
+    <configuration name="TokenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="regularexpressions.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="regularexpressions.test.TokenTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -383,19 +411,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DateManipulationTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DateFormatTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LocaleTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NumberFormatTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RegularExpressionsTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.DateFormatTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LocaleTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.NumberFormatTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RegularExpressionsTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TokenTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RegularExpressionsTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NumberFormatTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LocaleTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DateFormatTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DateManipulationTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TokenTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RegularExpressionsTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.NumberFormatTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LocaleTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DateFormatTest" />
       </list>
     </recent_temporary>
   </component>
@@ -413,7 +441,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -502,20 +531,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/enumtype/test/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="106" lean-forward="false" selection-start-line="6" selection-start-column="106" selection-end-line="6" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/associationclass/classes/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/associationclass/classes/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -832,9 +847,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2116" column="0" lean-forward="false" selection-start-line="2116" selection-start-column="0" selection-end-line="2116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/regularexpressions/test/TokenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
