@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c11fb7a-4229-4d82-9395-45093531c6b5" name="Default" comment="" />
+    <list default="true" id="7c11fb7a-4229-4d82-9395-45093531c6b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nio/test/BasicFileAttributesTest.java" afterPath="$PROJECT_DIR$/src/nio/test/BasicFileAttributesTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,12 +40,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RelativizingTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RelativizingTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nio/test/RelativizingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="126">
+              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicFileAttributesTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nio/test/BasicFileAttributesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/polymorphism/classes/Seller.java" />
         <option value="$PROJECT_DIR$/src/polymorphism/classes/Manager.java" />
         <option value="$PROJECT_DIR$/src/polymorphism/classes/Employee.java" />
         <option value="$PROJECT_DIR$/src/polymorphism/test/PolymorphismTest.java" />
@@ -144,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/nio/test/NormalizingTest.java" />
         <option value="$PROJECT_DIR$/src/nio/test/RelativingTest.java" />
         <option value="$PROJECT_DIR$/src/nio/test/RelativizingTest.java" />
+        <option value="$PROJECT_DIR$/src/nio/test/BasicFileAttributesTest.java" />
       </list>
     </option>
   </component>
@@ -194,6 +208,27 @@
               <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicios" type="462c0819:PsiDirectoryNode" />
+              <item name="associationsclassexercises" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exercicios" type="462c0819:PsiDirectoryNode" />
+              <item name="associationsclassexercises" type="462c0819:PsiDirectoryNode" />
+              <item name="javaclass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -229,15 +264,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RelativizingTest">
-    <configuration name="BufferedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.BasicFileAttributesTest">
+    <configuration name="BasicFileAttributesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="io.test.*" />
+          <option name="PATTERN" value="nio.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="io.test.BufferedTest" />
+      <option name="MAIN_CLASS_NAME" value="nio.test.BasicFileAttributesTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -407,19 +442,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.BufferedTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CreatingPathTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.NormalizingTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ResolvingPath" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RelativizingTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.CreatingPathTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.NormalizingTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ResolvingPath" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RelativizingTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.BasicFileAttributesTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RelativizingTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ResolvingPath" />
-        <item index="2" class="java.lang.String" itemvalue="Application.NormalizingTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CreatingPathTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BufferedTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.BasicFileAttributesTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RelativizingTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ResolvingPath" />
+        <item index="3" class="java.lang.String" itemvalue="Application.NormalizingTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CreatingPathTest" />
       </list>
     </recent_temporary>
   </component>
@@ -448,7 +483,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -527,13 +562,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/polymorphism/classes/ArchiveDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/polymorphism/test/DAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -888,9 +916,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nio/test/RelativizingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="126">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nio/test/BasicFileAttributesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
