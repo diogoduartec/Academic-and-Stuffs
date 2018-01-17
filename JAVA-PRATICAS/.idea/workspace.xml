@@ -174,10 +174,12 @@
       <file leaf-file-name="SortProductTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/collections/test/SortProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -255,8 +257,8 @@
         <option value="$PROJECT_DIR$/src/collections/test/ListCellphoneTest.java" />
         <option value="$PROJECT_DIR$/src/collections/SortListTest.java" />
         <option value="$PROJECT_DIR$/src/collections/classes/Product.java" />
-        <option value="$PROJECT_DIR$/src/collections/test/SortProductTest.java" />
         <option value="$PROJECT_DIR$/src/collections/test/SortListTest.java" />
+        <option value="$PROJECT_DIR$/src/collections/test/SortProductTest.java" />
       </list>
     </option>
   </component>
@@ -316,6 +318,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="collections" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="SortProductTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -996,10 +1006,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/collections/test/SortProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="244">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
           </folding>
         </state>
       </provider>
