@@ -1,2 +1,0 @@
-1 - Crie uma classe estudante com os seguintes atributos: nome, idade, notas. Crie um método para imprimir os dados
-e tirar a média desse aluno, caso a prova seja maior que 6 imprima aprovado senão, reprovado.
