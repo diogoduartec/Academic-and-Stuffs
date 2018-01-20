@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hello World!</title>
-		<script>
-			alert("Hello World");
-		</script>
+		<title>Operators</title>
+		<script type="text/javascript" src="_javascript/05_operators.js"></script>
+		<style type="text/css">
+			table{width: 165px;}
+			fieldset{width: 165px;}
+			label{display: block;float: left;}
+			label, input{width: 70px;margin: 3px 0;}
+			th, td{border:1px solid #ccc;font-size:18pt;}
+			body{background-color: yellow;}
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1>Hellow World!</h1>
-		<header>
+		<form id="imc_form" class="form>
+			<fieldset>
+			<legend>IMC Calculate</legend>
+			
+			<label for="weight">Weight</label>
+			<input type="text" name="weight"/>
+			
+			<label for="hight">Hight</label>
+			<input type="text" name="hight"/>
+			
+			<!-- <label for="cm">CM</label>
+			<input type="text" name="cm"/> -->
+
+			<label for="imc">IMC</label>
+			<input type="text" name="imc" disabled="disabled" />
+			<a href="#" onclick="imcCalculate();">Calculate</a>
+		</fieldset>
+		</form>
+
+		<table class="table">
+			<tr><th>IMC</th><th>Classification</th></tr>
+			<tr><td>&lt; 20</td><td>Underweight</td></td>
+			<tr><td>20  - 25</td><td>Ideal Weight</td></tr>
+			<tr><td>25 - 30</td><td>Overweight</td></tr>
+			<tr><td>30 - 35</td><td>Moderate Obesity</td></tr>
+			<tr><td>35 - 40</td><td>Severe Obesity</td></tr>
+		</table>
+		<table>
+</table>
 	</body>
 </html>
