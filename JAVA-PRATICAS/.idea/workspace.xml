@@ -17,6 +17,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/IteratorTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/ListCellphoneTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/ListTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/NavigableSetTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/SetTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/SortListTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/test/SortProductTest.java" />
@@ -151,8 +152,8 @@
       <file leaf-file-name="IteratorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collections/test/IteratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="227">
+              <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,11 +161,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SetTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collections/test/SetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="40">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="22" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigableSetTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/collections/test/NavigableSetTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,7 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/exception/customexception/LoginInvalidException.java" />
         <option value="$PROJECT_DIR$/src/exception/checkedexception/test/CustomExceptionTest.java" />
         <option value="$PROJECT_DIR$/src/exception/checkedexception/classes/Person.java" />
         <option value="$PROJECT_DIR$/src/exception/checkedexception/classes/Employee.java" />
@@ -243,9 +255,10 @@
         <option value="$PROJECT_DIR$/src/collections/test/BinarySearchTest.java" />
         <option value="$PROJECT_DIR$/src/collections/test/ConvertArrayList.java" />
         <option value="$PROJECT_DIR$/src/collections/test/ConvertArrayListTest.java" />
-        <option value="$PROJECT_DIR$/src/collections/test/IteratorTest.java" />
         <option value="$PROJECT_DIR$/src/collections/classes/SetTest.java" />
         <option value="$PROJECT_DIR$/src/collections/test/SetTest.java" />
+        <option value="$PROJECT_DIR$/src/collections/test/IteratorTest.java" />
+        <option value="$PROJECT_DIR$/src/collections/test/NavigableSetTest.java" />
       </list>
     </option>
   </component>
@@ -285,26 +298,6 @@
               <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PRATICA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JAVA-PRATICAS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -340,26 +333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SetTest">
-    <configuration name="BinarySearchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="collections.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="collections.test.BinarySearchTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PRATICA" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="Application.NavigableSetTest">
     <configuration name="ConvertArrarListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -406,6 +380,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="collections.test.IteratorTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PRATICA" />
+      <envs />
+    </configuration>
+    <configuration name="NavigableSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="collections.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="collections.test.NavigableSetTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -518,19 +511,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.BinarySearchTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ConvertArrarListTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ConvertArrayListTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.IteratorTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SetTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ConvertArrarListTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ConvertArrayListTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.IteratorTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SetTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NavigableSetTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SetTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.IteratorTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ConvertArrayListTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ConvertArrarListTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BinarySearchTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NavigableSetTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SetTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.IteratorTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ConvertArrayListTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ConvertArrarListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -549,7 +542,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -564,7 +556,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -638,13 +630,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/strings/test/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/date/test/NumberFormat.java" />
     <entry file="file://$PROJECT_DIR$/src/strings/test/StringBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -887,6 +872,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,16 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/collections/test/IteratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/collections/test/ListCellphoneTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -967,10 +943,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/collections/test/IteratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/collections/test/SetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="40">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="22" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collections/test/NavigableSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
