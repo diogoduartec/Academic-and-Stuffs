@@ -5,15 +5,12 @@ CPF_SIZE = 14
 CNPJ_SIZE = 18
 
 
-DIVISOR = 11
-
-
 ## AUXILIAR METHODS
 def multSumArray(array, mult):
-	ac = 0
-	for i in range(len(mult)):
-		ac += int(array[i])*int(mult[i])
-	return ac
+    ac = 0
+    for i in range(len(mult)):
+        ac += int(array[i])*int(mult[i])
+    return ac
     
 
 def getDigit(ac):
@@ -69,19 +66,22 @@ def isValidCnpj(cnpj):
 def isValidRegex(note):
     cpf = note[0]
     cnpj = note[1]
-    datetime = note[3]
+    date = note[2]
+    time = note[3]
     price = note[4]
     verification_code = note[5]
-
     
     if(not re.search(r'(\d{3}\.){2}\d{3}-\d{2}', cpf)):
         return False
-    
+
     if(not re.search(r'\d{2}(\.\d{3}){2}/\d{4}-\d{2}', cnpj)):
         return False
     
-    if(not re.search(r'\d{4}\.(1[0-2])|(0[1-9])\.([0-2][0-9])|(3[0-1])] ([0-1][0-9])|(2[0-4]):[0-5][0-9]:[0-5][0-9]', datetime)): ## datetime without bisext or month validation
+    if(not re.search(r'\d{4}\.(1[0-2])|(0[1-9])\.([0-2][0-9])|(3[0-1])', date)): ## datetime without bisext or month validation
         return False
+    
+    if(not re.search(r'([0-1][0-9])|(2[0-4]):[0-5][0-9]:[0-5][0-9]', time)):
+       return False
     
     if(not re.search(r'\[\d+\.\d{2}(,\d+\.\d{2})*\]', price)):##prices
         return False
@@ -94,9 +94,12 @@ def isValidRegex(note):
 
 input_ = input()
 note = input_.split(' ')
-
-if isValidRegex(note):
-    if isValidCnpj(note[1]) and isValidCpf(note[0]):
+if(input_==''):
+    print('True')
+elif len(note)!= 6:
+    print('False')
+elif isValidRegex(note):
+    if isValidCpf(note[0]) and isValidCnpj(note[1]):
         print('True')
     else:
         print('False')
