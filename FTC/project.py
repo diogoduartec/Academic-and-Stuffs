@@ -47,8 +47,8 @@ def isValidCpf(cpf):
 
 
 def isValidCnpj(cnpj):
-    multCnpj = [5,4,3,2,9,8,7,6,5,4,3,2]
-    
+    multCnpj1 = [5,4,3,2,9,8,7,6,5,4,3,2]
+    multCnpj2 = [6,5,4,3,2,9,8,7,6,5,4,3,2]
     if len(cnpj) != CNPJ_SIZE:
         return False
 
@@ -56,29 +56,50 @@ def isValidCnpj(cnpj):
     cnpj = cnpj.replace('-','')
     cnpj = cnpj.replace('/','')
 
-    ac = multSumArray(cnpj,(multCnpj))
-    
+    ac = multSumArray(cnpj,(multCnpj1))
     if(getDigit(ac) != int(cnpj[12])):
         return False
-
-    multCnpj = [cnpj[12]] + multCnpj;
-    ac = multSumArray(cnpj, multCnpj)
     
+    ac = multSumArray(cnpj, multCnpj2)
     if(getDigit(ac) != int(cnpj[13])):
         return False
 
     return True
 
+def isValidRegex(note):
+    cpf = note[0]
+    cnpj = note[1]
+    datetime = note[3]
+    price = note[4]
+    verification_code = note[5]
+
+    
+    if(not re.search(r'(\d{3}\.){2}\d{3}-\d{2}', cpf)):
+        return False
+    
+    if(not re.search(r'\d{2}(\.\d{3}){2}/\d{4}-\d{2}', cnpj)):
+        return False
+    
+    if(not re.search(r'\d{4}\.(1[0-2])|(0[1-9])\.([0-2][0-9])|(3[0-1])] ([0-1][0-9])|(2[0-4]):[0-5][0-9]:[0-5][0-9]', datetime)): ## datetime without bisext or month validation
+        return False
+    
+    if(not re.search(r'\[\d+\.\d{2}(,\d+\.\d{2})*\]', price)):##prices
+        return False
+    
+    if(not re.search(r'\d{9}-(\w?){5}-(0|2|4|6|8){3}(-[0-1]{3})?', verification_code)):##prices
+       return False
+    
+    return True
+
+
 input_ = input()
+note = input_.split(' ')
 
-##match = re.search(r'(\d{3}.){2}\d{3}-\d{2}', input_) ##cpf
-##match = re.search(r'\d{2}(.\d{3}){2}/\d{4}-\d{2}', input_) ##cnpj
-##match = re.search(r'\d{4}.(1[0-2])|(0[1-9]).([0-2][0-9])|(3[0-1])] ([0-1][0-9])|(2[0-4]):[0-5][0-9]:[0-5][0-9]', input_) ## datetime without bisext or month validation
-
-if match:
-    print('rola')
-    if isValidCnpj(input_):
+if isValidRegex(note):
+    if isValidCnpj(note[1]) and isValidCpf(note[0]):
         print('True')
     else:
         print('False')
-
+else:
+    print('False')
+    
