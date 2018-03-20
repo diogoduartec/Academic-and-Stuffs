@@ -3,7 +3,7 @@ import re
 ## CONSTANTS VALUES
 CPF_SIZE = 14
 CNPJ_SIZE = 18
-
+DATE_SIZE = 10
 
 ## AUXILIAR METHODS
 def multSumArray(array, mult):
@@ -31,15 +31,13 @@ def isLeap(year):
         return False
 
 
-##VALIDATION METHODS       
-def isValidDate(date_):
-    date =  date_.split('.')
-    year = date[0]
+##VALIDATION METHODS
 
-    if isLeap(int(year)):
-        return re.search(r'\d{4}((0((1)|(3)|(5)|(7)|(8)))|((10)|(12))\.(0[1-9])|([1-2][0-9])|(3[0-1]))|(((0((4)|(6)|(9)))|(11))\.(0[1-9])|([1-2][0-9])|(30))|(02(0[1-9])|([1-2][0-9]))',date_)
+def is31Month(month):
+    if(month=='01' or month=='03' or month=='05' or month=='07' or month=='08' or month=='10' or month=='12'):
+        return True
     else:
-        return re.search(r'\d{4}((0((1)|(3)|(5)|(7)|(8)))|((10)|(12))\.(0[1-9])|([1-2][0-9])|(3[0-1]))|(((0((4)|(6)|(9)))|(11))\.(0[1-9])|([1-2][0-9])|(30))|(02(0[1-9])|([1-2][0-8]))',date_)
+        return False
 
 def isValidCpf(cpf):
     multCpf1 = [10,9,8,7,6,5,4,3,2]
@@ -84,6 +82,27 @@ def isValidCnpj(cnpj):
 
     return True
 
+def isValidDate(date_):
+    date = date_.split('.')
+    year = date[0]
+    month = date[1]
+    day = date[2]
+    
+    if len(date_) != DATE_SIZE:
+        return False
+
+    if(day=='00' or month=='00'):
+        return False
+
+    if(isLeap(int(year)) and month=='02' and int(day)>29):
+        return False;
+    elif(!isLeap(int(year)) and month=='02' and int(day)>28):
+        return False
+    if(!is31Month(month) and int(month)>30):
+        return False
+
+    return True
+
 def isValidRegex(note):
     cpf = note[0]
     cnpj = note[1]
@@ -98,7 +117,7 @@ def isValidRegex(note):
     if(not re.search(r'\d{2}(\.\d{3}){2}/\d{4}-\d{2}', cnpj)):
         return False
     
-    if(not isValidDate(date)): ## datetime with bisext or month validation
+    if(not (isValidDate(date) and re.search(r'/d{4}\.(0[1-9])|(1[0-2])\.(0[1-9])|([1-2][0-9])|(3[0-1])', date) and isValidDate(date))): ## datetime with leap or month validation
         return False
     
     if(not re.search(r'([0-1][0-9])|(2[0-4]):[0-5][0-9]:[0-5][0-9]', time)):
