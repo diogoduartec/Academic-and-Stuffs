@@ -19,7 +19,28 @@ def getDigit(ac):
     else:
         return 11 - ac%11
 
-##VALIDATION METHODS
+def isLeap(year):
+    if year%4==0:
+        if year%100!=0:
+            return True
+        elif year%400==0:
+            return True;
+        else:
+            return False
+    else:
+        return False
+
+
+##VALIDATION METHODS       
+def isValidDate(date_):
+    date =  date_.split('.')
+    year = date[0]
+
+    if isLeap(int(year)):
+        return re.search(r'\d{4}((0((1)|(3)|(5)|(7)|(8)))|((10)|(12))\.(0[1-9])|([1-2][0-9])|(3[0-1]))|(((0((4)|(6)|(9)))|(11))\.(0[1-9])|([1-2][0-9])|(30))|(02(0[1-9])|([1-2][0-9]))',date_)
+    else:
+        return re.search(r'\d{4}((0((1)|(3)|(5)|(7)|(8)))|((10)|(12))\.(0[1-9])|([1-2][0-9])|(3[0-1]))|(((0((4)|(6)|(9)))|(11))\.(0[1-9])|([1-2][0-9])|(30))|(02(0[1-9])|([1-2][0-8]))',date_)
+
 def isValidCpf(cpf):
     multCpf1 = [10,9,8,7,6,5,4,3,2]
     multCpf2 = [11,10,9,8,7,6,5,4,3,2]
@@ -77,7 +98,7 @@ def isValidRegex(note):
     if(not re.search(r'\d{2}(\.\d{3}){2}/\d{4}-\d{2}', cnpj)):
         return False
     
-    if(not re.search(r'\d{4}\.(1[0-2])|(0[1-9])\.([0-2][0-9])|(3[0-1])', date)): ## datetime without bisext or month validation
+    if(not isValidDate(date)): ## datetime with bisext or month validation
         return False
     
     if(not re.search(r'([0-1][0-9])|(2[0-4]):[0-5][0-9]:[0-5][0-9]', time)):
@@ -105,4 +126,3 @@ elif isValidRegex(note):
         print('False')
 else:
     print('False')
-    
