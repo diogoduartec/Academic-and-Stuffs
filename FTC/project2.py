@@ -1,3 +1,4 @@
+import ast
 def initMatrix(lines, columns):##OK
 	result = []
 	for i in range(lines):
@@ -52,14 +53,32 @@ def makeTransitionMatrix(delta, a, states):##OK
 
 	return result
 
-altomata = input()
-
+def getIdentity(n):
+	result = initMatrix(n,n)
+	for i in range(n):
+		result[i][i] = 1
+	return result
 
 automata = ast.literal_eval(input())
+
 n = int(input())
+xA = makeTransitionMatrix(automata['delta'], 'a', automata['estados'])
+xB = makeTransitionMatrix(automata['delta'], 'b', automata['estados'])
+piT = makeTransposedMatrix(makePi(automata['estados'], automata['inicial']))
+eta = makeEta(automata['estados'], automata['final'])
+
+w = {'a':xA, 'b':xB}
+ 
 for i in range(n):
-	word = input()
-	xA = makeTransitionMatrix(automata['delta'], 'a', automata['estados'])
-	xB = makeTransitionMatrix(automata['delta'], 'b', automata['estados'])
-	piT = makeTransposedMatrix(makePi(automata['estados']), automata['inicial'])
-	eta = makeEta(automata['estados'], automata['final'])
+ 	word = input()
+ 	x = getIdentity(automata['estados']);
+ 	for c in word:
+ 		x = matrixMultiplication(x, w[c])
+ 		print(x)
+ 	print(piT)
+ 	print(eta)
+ 	ans = matrixMultiplication(piT, x)
+ 	print(ans)
+ 	ans = matrixMultiplication(ans, eta)
+ 	print(ans)
+
