@@ -30,30 +30,30 @@ public:
 	}
 };
 
-
+template <class  Type>
 class Node{
 private:
-	Soldier soldier;
+	Type item;
 	Node * next;
 
 public:
 	Node(){}
-	Node(Soldier soldier){
-		this->soldier = soldier;
+	Node(Type item){
+		this->item = item;
 		this->next = NULL;
 	}
 
-	Node(Soldier soldier, Node * next){
-		this->soldier = soldier;
+	Node(Type item, Node * next){
+		this->item = item;
 		this->next = next;
 	}
 
-	void setSoldier(){
-		this->soldier = soldier;
+	void setItem(Type item){
+		this->item = item;
 	}
 
-	Soldier getSoldier(){
-		return this->soldier;
+	Soldier getItem(){
+		return this->item;
 	}
 
 	void setNext(Node * next){
@@ -65,15 +65,37 @@ public:
 	}
 };
 
-class Stack(){
+template <class Type>
+class Stack{
 private:
-	Node * top;
+	Node<Type> * top;
 public:
 	Stack(){
 		this->top = NULL;
 	}
+	void push(Type item){
+		Node<Type>* newNode = new Node<Type>(item);
+		newNode->setNext(top);
+		top = newNode;
+	}
+	void pop(){
+		if(top != NULL){
+			Node<Type> * toRemove = top;
+			top = top->next;
+			delete toRemove;
+		}
+	}
+	Type getTop(){
+		return top->item;
+	}
 };
 
+
 int main(){
+	Stack<Soldier> * soldies = new Stack<Soldier>();
+	Soldier * s1 = new Soldier("Mailkerson", 20);
+	Soldier * s2 = new Soldier("Jamal", 30);
+	soldies->push(*s1);
+	soldies->push(*s2);
 
 }
