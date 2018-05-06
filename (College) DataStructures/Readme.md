@@ -1,6 +1,6 @@
 # DATA STRUCTURES & ALGORITHMS
 
-## This directory contains my exercises and projects related to the data structures and algorithms (college)
+### This directory contains my exercises and projects related to the data structures and algorithms (college)
 
 ## TOPCIS
  - C language
