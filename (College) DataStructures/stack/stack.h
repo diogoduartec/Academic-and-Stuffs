@@ -27,7 +27,7 @@ public:
 	}
 	
 	void setItem(Type * item){
-		this->item;
+		this->item = item;
 	}
 
 	Node<Type> * getNext(){

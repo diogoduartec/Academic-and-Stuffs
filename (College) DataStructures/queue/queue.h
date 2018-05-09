@@ -13,7 +13,7 @@ template<class Type>
 class Node{
 private:
 	Type * item;
-	Node * next;
+	Node<Type> * next;
 public:
 	Node(){
 		this->next = NULL;
@@ -35,7 +35,7 @@ public:
 		return this->next;
 	}
 
-	void setNext(Node * next){
+	void setNext(Node<Type> * next){
 		this->next = next;
 	}
 };
@@ -55,13 +55,13 @@ public:
 		else return false;
 	}
 	void enqueue(Type * item){
-		cout << "aqui1" << endl;
 		Node<Type> * newNode = new Node<Type>(item);
-		cout << "aqui2" << endl;
+		
+		/* HERE IS THE PROBLEM */
 		back->setNext(newNode);
-		cout << "aqui3" << endl;
+		/* HERE IS THE PROBLEM */
+
 		back = newNode;
-		cout << "aqui4" << endl;
 	}
 	void dequeue(){
 		//if(!isEmpty()){
