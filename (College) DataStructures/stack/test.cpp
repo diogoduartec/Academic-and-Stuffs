@@ -68,10 +68,23 @@ public:
 
 int main(){
 	Stack<Person> * stack = new Stack<Person>();
+	string name, address, phone;
+	int age, go;
 	Person * p1 = new Person("Diogo", 19, "GodKnows, it, 171", "123-5789");
 	Person * p2 = new Person("Natalia", 19, "GodKnows, it, 172", "987-6321");
-	stack->push(p1);
-	stack->push(p2);
-	stack->getTop()->print();
+	int n;
+	cin >> n;
+	while(n--){
+		cin >> name >> age >> address >> phone;
+		Person * person = new Person(name, age, address, phone);
+		stack->push(person);
+	}
+	while(true){
+		cin >> go;
+		Person * person = stack->getTop();
+		if(person == NULL) cout << "stack is empty" << endl;
+		else person->print();
+		stack->pop();
+	}
 	return 0;
 }

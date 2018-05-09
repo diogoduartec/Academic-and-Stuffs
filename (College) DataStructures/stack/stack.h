@@ -16,10 +16,12 @@ public:
 	
 	Node(){
 		this->next = NULL;
+		this->item = NULL;
 	}
 	
 	Node(Type * item){
 		this->item = item;
+		this->next = NULL;
 	}
 	
 	Type * getItem(){
@@ -47,17 +49,28 @@ public:
 	Stack(){
 		this->top = NULL;
 	}
+
+	bool isEmpty(){
+		if(top == NULL) return true;
+		else return false;
+	}
+
 	void push(Type * item){
 		Node<Type> * newNode = new Node<Type>(item);
 		newNode->setNext(top);
 		top = newNode;
 	}
+
 	void pop(){
-		Node<Type> * trash = this->top;
-		top = top->getNext();
-		delete trash;
+		if(!isEmpty()){
+			Node<Type> * trash = this->top;
+			top = top->getNext();
+			delete trash;
+		}	
 	}
+
 	Type * getTop(){
+		if(isEmpty()) return NULL;
 		return top->getItem();
 	}
 };

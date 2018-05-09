@@ -73,6 +73,16 @@ int main(){
 	queue->enqueue(p1);
 	queue->enqueue(p2);
 	queue->getFront()->print();
+	cout <<"--------------------"<<endl;
 	queue->getBack()->print();
+	cout <<"--------------------"<<endl;
+
+	queue->dequeue();
+	queue->getBack()->print();
+	cout <<"--------------------"<<endl;
+
+	queue->dequeue();
+	if(queue->getBack() == NULL) cout << "empty Queue" << endl;
+
 	return 0;
 }

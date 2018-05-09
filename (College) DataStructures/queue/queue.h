@@ -56,24 +56,33 @@ public:
 	}
 	void enqueue(Type * item){
 		Node<Type> * newNode = new Node<Type>(item);
-		
-		/* HERE IS THE PROBLEM */
-		back->setNext(newNode);
-		/* HERE IS THE PROBLEM */
-
-		back = newNode;
+		if(isEmpty()){
+			back = newNode;
+			front = newNode;
+		}
+		else{
+			back->setNext(newNode);
+			back = newNode;
+		}
 	}
 	void dequeue(){
-		//if(!isEmpty()){
+		if(!isEmpty()){
 			Node<Type> * toDelete = front;
-			front = front->getNext();
+			if(front == back){
+				front = back = NULL;
+			}
+			else{
+				front = front->getNext();
+			}
 			delete toDelete;
-		//}
+		 }
 	}
 	Type * getFront(){
+		if(isEmpty()) return NULL;
 		return front->getItem();
 	}
 	Type * getBack(){
+		if(isEmpty()) return NULL;
 		return back->getItem();
 	}
 };
