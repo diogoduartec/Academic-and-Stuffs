@@ -19,12 +19,12 @@ def initTapes():
 		tapeResult.append(' ')
 
 def q4():
-	print('q4')
+	#print('q4')
 
 	return True
-
+#carry 1#
 def q3():
-	print('q3')
+	#print('q3')
 
 	global tapeResult
 	global tapeNumberA
@@ -49,8 +49,9 @@ def q3():
 	return q2()
 
 
+#sum#
 def q2():
-	print('q2')
+	#print('q2')
 
 	global tapeResult
 	global tapeNumberA
@@ -78,8 +79,9 @@ def q2():
 	headResult -= 1
 	return q2()
 
+#writing tape of second number#
 def q1():
-	print('q1')
+	#print('q1')
 	global tapeInput
 	global tapeNumberA
 	global tapeNumberB
@@ -93,18 +95,21 @@ def q1():
 		headB -= 1
 		headResult -= 1
 		return q2()
-	if(tapeInput[headInput] == '0'):
+	elif(tapeInput[headInput] == '0'):
 		tapeNumberB[headB] = '0'
-	if(tapeInput[headInput] == '1'):
+	elif(tapeInput[headInput] == '1'):
 		tapeNumberB[headB] = '1'
+	else:
+		return False
 	headInput += 1
 	headB += 1
 	headResult += 1
 	return q1()
 
 
+#writing tape of first number#
 def q0():
-	print('q0')
+	#print('q0')
 	global tapeInput
 	global tapeNumberA
 	global tapeNumberB
@@ -114,11 +119,14 @@ def q0():
 
 	##print(tapeInput[headInput])
 	if(tapeInput[headInput] == '+'):
+		headInput += 1
 		return q1()
-	if(tapeInput[headInput] == '0'):
+	elif(tapeInput[headInput] == '0'):
 		tapeNumberA[headA] = '0'
-	if(tapeInput[headInput] == '1'):
+	elif(tapeInput[headInput] == '1'):
 		tapeNumberA[headA] = '1'
+	else:
+		return False
 	headInput += 1
 	headA += 1
 	return q0()
@@ -126,11 +134,18 @@ def q0():
 initTapes()
 
 tapeInput = input()
+print(tapeInput)
 tapeInput = ' ' + tapeInput + ' '
 ##print(tapeInput)
-print(q0())
-out = str(tapeResult)
-out = out.replace(' ', '')
-out = out.replace(',', '')
-out = out.replace('\'', '')
-print(out)
+if(q0()):
+	out = str(tapeResult)
+	out = out.replace(' ', '')
+	out = out.replace(',', '')
+	out = out.replace('\'', '')
+	out = out.replace('[', '')
+	out = out.replace(']', '')
+	tapeInput = tapeInput.replace(' ', '')
+	print(tapeInput+'='+out+' ACEITA')
+else:
+	tapeInput = tapeInput.replace(' ', '')
+	print(tapeInput+' REJEITA')

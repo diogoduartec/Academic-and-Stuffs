@@ -3,10 +3,10 @@ tapeNumberA = []
 tapeNumberB = []
 tapeResult = []
 headInput = 1
-headA = 1
-headB = 1
-headResult = 1
-headOperator = 1
+headA = 25
+headB = 25
+headResult = 25
+headOperator = 25
 
 def initTapes():
 	global tapeNumberA
@@ -19,12 +19,12 @@ def initTapes():
 		tapeResult.append(' ')
 
 def q4():
-	print('q4')
+	#print('q4')
 
 	return True
-
+#carry 1#
 def q3():
-	print('q3')
+	#print('q3')
 
 	global tapeResult
 	global tapeNumberA
@@ -49,8 +49,9 @@ def q3():
 	return q2()
 
 
+#sum#
 def q2():
-	print('q2')
+	#print('q2')
 
 	global tapeResult
 	global tapeNumberA
@@ -78,8 +79,40 @@ def q2():
 	headResult -= 1
 	return q2()
 
+def qMoveHeads():
+	global tapeNumberA
+	global tapeNumberB
+	global headA
+	global headB
+
+	if(tapeNumberA[headA]==' ' and tapeNumberB[headB]==' '):
+		headA -= 1
+		headB -= 1
+		return q2()
+	headB += 1
+	headA += 1
+	return qMoveHeads()
+
+#correct the tapes so it is the same size #
+def qCorrect():
+	global tapeNumberA
+	global tapeNumberB
+	global headA
+	global headB
+
+	if(tapeNumberA[headA] == ' ' and tapeNumberB[headB] == ' '):
+		return qMoveHeads()
+	elif(tapeNumberA[headA] != ' ' and tapeNumberB[headB] == ' '):
+		tapeNumberA[headA] = '0'
+	elif(tapeNumberA[headA] == ' ' and tapeNumberB[headB] != ' '):
+		tapeNumberB[headB] = '0'
+	headA -= 1
+	headB -= 1
+	return qCorrect()
+
+#writing tape of second number#
 def q1():
-	print('q1')
+	#print('q1')
 	global tapeInput
 	global tapeNumberA
 	global tapeNumberB
@@ -89,22 +122,24 @@ def q1():
 	global headResult
 
 	if(tapeInput[headInput] == ' '):
-		headA -= 1
-		headB -= 1
-		headResult -= 1
-		return q2()
-	if(tapeInput[headInput] == '0'):
+		headB += 1
+		#headResult -= 1
+		return qCorrect()
+	elif(tapeInput[headInput] == '0'):
 		tapeNumberB[headB] = '0'
-	if(tapeInput[headInput] == '1'):
+	elif(tapeInput[headInput] == '1'):
 		tapeNumberB[headB] = '1'
+	else:
+		return False
 	headInput += 1
-	headB += 1
-	headResult += 1
+	headB -= 1
+	#headResult += 1
 	return q1()
 
 
+#writing tape of first number#
 def q0():
-	print('q0')
+	#print('q0')
 	global tapeInput
 	global tapeNumberA
 	global tapeNumberB
@@ -112,25 +147,66 @@ def q0():
 	global headB
 	global headInput
 
-	##print(tapeInput[headInput])
 	if(tapeInput[headInput] == '+'):
+		headA -= 1
+		headB -= 1
+		headInput += 1
 		return q1()
-	if(tapeInput[headInput] == '0'):
+	elif(tapeInput[headInput] == '0'):
 		tapeNumberA[headA] = '0'
-	if(tapeInput[headInput] == '1'):
+	elif(tapeInput[headInput] == '1'):
 		tapeNumberA[headA] = '1'
+	else:
+		return False
 	headInput += 1
 	headA += 1
+	headB += 1
 	return q0()
 
 initTapes()
 
 tapeInput = input()
 tapeInput = ' ' + tapeInput + ' '
-##print(tapeInput)
-print(q0())
-out = str(tapeResult)
-out = out.replace(' ', '')
-out = out.replace(',', '')
-out = out.replace('\'', '')
-print(out)
+
+if(q0()):
+	out = str(tapeResult)
+	print(tapeNumberA)
+	print(tapeNumberB)
+	print(out)
+	out = out.replace(' ', '')
+	out = out.replace(',', '')
+	out = out.replace('\'', '')
+	out = out.replace('[', '')
+	out = out.replace(']', '')
+	tapeInput = tapeInput.replace(' ', '')
+	print(tapeInput+'='+out+' ACEITA')
+else:
+	tapeInput = tapeInput.replace(' ', '')
+	print(tapeInput+' REJEITA')
+
+
+a = str(tapeNumberA)
+b = str(tapeNumberB)
+r = str(tapeResult)
+
+a = a.replace(' ', '')
+a = a.replace(',', '')
+a = a.replace('\'', '')
+a = a.replace('[', '')
+a = a.replace(']', '')
+
+b = b.replace(' ', '')
+b = b.replace(',', '')
+b = b.replace('\'', '')
+b = b.replace('[', '')
+b = b.replace(']', '')
+
+r = r.replace(' ', '')
+r = r.replace(',', '')
+r = r.replace('\'', '')
+r = r.replace('[', '')
+r = r.replace(']', '')
+
+print(a)
+print(b)
+print(r)
