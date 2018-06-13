@@ -1,0 +1,39 @@
+<?php
+
+include_once("conexao.php");
+
+$sql = "select * from usuarios";
+$consulta = mysqli_query($conexao, $sql);
+$resgistros = msqli_num_rows($consulta);//
+
+
+mysqli_close($conexao);
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Sistema de Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul class="menu">
+				<a href="index.php"><li>Cadastro</li></a>
+				<a href="consultas.php"><li>Consultas</li></a>
+			</ul>
+		</nav>
+		<section>
+			<h1>Consultas</h1>
+			<hr><br><br>
+			<?php
+				print "$resgistros resgistros encontrados";
+			?>
+		</section>
+	</div>
+
+</body>
+</html>
