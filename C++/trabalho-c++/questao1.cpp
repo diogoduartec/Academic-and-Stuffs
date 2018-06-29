@@ -1,15 +1,27 @@
 #include <iostream>
 #include <vector>
 #include <initializer_list>
-#include <algorithm>;
+#include <algorithm>
+
 using namespace std;
 
 class Polinomio
 {
 private:
-	vector<double> coeficientes;//armazena os coeficientes do polinômio
+	vector<double> coeficientes;///armazena os coeficientes do polinômio
 public:
-	Polinomio(initializer_list<double> numeros) : coeficientes(numeros){}//inicializa os coeficientes com numeros que serão passados no instanciamento da classe
+	Polinomio(initializer_list<double> numeros){
+	    /*initializer_list<double>::iterator it;
+        for(it = numeros.begin(); it != numeros.end(); ++it){
+            if(*it == -1000) break;
+            coeficientes.push_back(*it);
+        }*/
+        for(auto it=numeros.begin(); it != numeros.end(); ++it){
+            if(*it == -1000) break;
+            coeficientes.push_back(*it);
+        }
+	}///inicializa os coeficientes com numeros que serão passados no instanciamento da classe
+
 	void ordenaCoeficientes(){
 		sort(this->coeficientes.begin(), this->coeficientes.end());//ordena os coeficientes em ordem crescente
 	}
@@ -51,7 +63,7 @@ public:
 
 int main(){
 	Polinomio * polinomios[10];
-	initializer_list<double> coeficientes = {2.0, 7.5, 3.0, 3.3, 1.5};
+	initializer_list<double> coeficientes = {2.0, 7.5, 3.0, 3.3, 1.5, -1000};
 
 	///inicializando polinomios
 	for(int i=0; i<10; i++){
