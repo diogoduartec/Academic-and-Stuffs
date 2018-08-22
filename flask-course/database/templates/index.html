@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1 id="titulo">{{ titulo }}</h1>
+	{% for value in list %}
+	<p>{{value}}</p>
+	{% endfor %}
+{% endblock %}
