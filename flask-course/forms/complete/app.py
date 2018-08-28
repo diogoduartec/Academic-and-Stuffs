@@ -17,7 +17,19 @@ class Users(db.Model):
 	password = db.Column(db.String(80), nullable=False)
 
 
-@app.route("/signup", methods=["GET", "POSt"])
+@app.route("/")
+def index():
+	return render_template("index.html")
+
+
+@app.route("/search")
+def search():
+	nickname = request.args.get("nickname")
+
+	return nickname
+
+
+@app.route("/signup", methods=["GET", "POST"])
 def signup():
 	if request.method == "POST":
 		hashed_pw = generate_password_hash(request.form["password"], method="sha256")
@@ -27,6 +39,20 @@ def signup():
 		return "You've registered successfully."
 
 	return render_template("signup.html")
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+	if request.method == "POST":
+		user = Users.query.filter_by(username=request.form["username"]).first()
+		if user and check_password_hash(request.form["password"], user.password):
+			return "You are logged in"
+		else:
+			return "Your credentials are invalid, check and try again"
+
+	return render_template("login.html")
+
+
 
 if __name__ == "__main__":
 	db.create_all()

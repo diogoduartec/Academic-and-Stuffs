@@ -6,8 +6,9 @@ Home
 {% block content %}
 
 <h1>Welcome!</h1>
-<form method="get" action="{{ url_for('login') }}">
-	<p><input type="text" name="usename"></p>
+<!--'action' make link between server(function login in app.py) and form-->
+<form method="post" action="{{ url_for('login') }}"
+	<p><input type="text" name="username"></p>
 	<p><input type="password" name="password"></p>
 	<input type="submit" name="Login">
 </form>
