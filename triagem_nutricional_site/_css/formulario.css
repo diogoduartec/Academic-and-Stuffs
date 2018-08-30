@@ -1,6 +1,6 @@
 .container{
 	margin-top: 10px;
-	font-size: 0.7em;
+	font-size: 1.0em;
 }
 .box{
 	border-color: grey;
@@ -10,7 +10,7 @@
 .float{
 	position:fixed;
 	top:40px;
-	right:40px;
+	right:25px;
 	color:#FFF;
 	border-radius:50%;
 	text-align:center;
@@ -21,8 +21,8 @@
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    top:170px;
-	right:65px;
+    top:100px;
+	right:20px;
     position: fixed;
     z-index: 1;
 }
@@ -36,4 +36,23 @@
 }
 #header-img {
 	width: 100%;
+}
+
+#button-download {
+	width: 60px;
+	height: 60px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable, #printable * {
+    visibility: visible;
+  }
+  #printable {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
 }

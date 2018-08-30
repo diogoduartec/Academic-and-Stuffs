@@ -1,0 +1,44 @@
+.container{
+	margin-top: 10px;
+	font-size: 0.7em;
+}
+.box{
+	border-color: grey;
+	border-style: solid;
+	border-width: thin;
+}
+.float{
+	position:fixed;
+	top:40px;
+	right:25px;
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+	box-shadow: 3px 3px 5px #999;
+}
+
+.Tooltip {
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top:100px;
+	right:20px;
+    position: fixed;
+    z-index: 1;
+}
+.button-float {
+	position:fixed;
+	top:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+}
+#header-img {
+	width: 100%;
+}
+
+#button-download {
+	width: 60px;
+	height: 60px;
+}

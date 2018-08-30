@@ -1,0 +1,38 @@
+.form {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.btnAuth {
+	height: 80%;
+}
+
+.icon-download {
+	padding-right: 10px;
+}
+
+.Tooltip {
+    visibility: hidden;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.col-2:hover .Tooltip{
+	visibility: visible;
+}
+
+#logo_splash {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10%;
+}
+
+#displayName {
+    color: grey;
+}

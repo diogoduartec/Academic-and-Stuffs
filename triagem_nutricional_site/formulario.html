@@ -6,12 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="_css/formulario.css">
 </head>
 <body>
-	<img src="_assets/icon-save.png" class="float" id="button-download">
+	<div id="download">
+		<img src="_assets/icon-save.png" class="float" onClick="window.print();" id="button-download">
+		<a href="#" class="Tooltip" onClick="window.print();">Download</a>	
+	</div>
 	
-	<span class="Tooltip">Download</span>
-	<main>
+	<main id="printable">
 	<div class="container" id="conteudo">
-		<img src="_assets/header.jpg" id="header-img">
+		<img src="_assets/header.png" class="mb-3" id="header-img">
 		<div class="box" id="Dados-Paciente">
 		<div class="row">
 			<div class="col-6" id="nome"><b>Paciente: </b></div>
@@ -35,7 +37,7 @@
 			<div class="col-4" id="registro"><b>Registro: </b></div>
 		</div>
 		</div>
-		<h6 class="mt-2 text-center">TRIAGEM DE RISCO NUTRICIONAL ADAPTADA - NRS 2002 - NUTRITIONAL RISK SCREENING</h6>
+		<h5 class="mt-2 text-center">TRIAGEM DE RISCO NUTRICIONAL ADAPTADA - NRS 2002 - NUTRITIONAL RISK SCREENING</h2>
 
 		<div class="mt-2" id="triagem-inicial">
 		<div class="row">
@@ -66,7 +68,9 @@
 		</div>
 
 		<p class="mt-2 mb-1">
-		<b>SIM</b>: se a resposta for “sim” para qualquer uma das questões, continue e preencha a parte 2.<br>
+		<b>SIM:</b> Se a resposta for “sim” para qualquer uma das questões, continue e preencha a parte 2.<br>
+		</p>
+		<b>NÂO:</b> Se a resposta for “não” para todas as questões, reavalie o paciente semanalmente. Se o paciente tiver indicação de cirurgia de grande porte, deve-se considerar Terapia Nutricional para evitar riscos associados. Continue a preencha a parte 2.<br>
 		</p>
 
 		<div class="mt-2" id="triagem-risco-nutricional">
@@ -104,14 +108,14 @@
 			<div class="col-3 box"> Trauma craniano*; Transplante de medula óssea*; Cuidados intensivos (APACHE > 10) </div>
 		</div>
 	</div>
-	<p class="mt-1 paragraph" id="score">
+	<p class="mt-3 paragraph" id="score">
 		Pontuação (estado nutricional) + pontuação (gravidade da doença): <b>Escore de Risco Nutricional Total = </b>
 	</p>
-	<p class="box mt-1">
+	<p class="box mt-2">
 		Escore total ≥ 3: no momento, o paciente apresenta risco nutricional e a terapia nutricional deve ser iniciada.<br> 
 		Escore total < 3: no momento, o paciente não apresenta risco nutricional e deve ser reavaliado semanalmente. Porém, se o paciente tiver indicação de cirurgia de grande porte, deve-se considerar terapia nutricional para evitar riscos associados.
 	</p>
-	<div class="box">
+	<div class="box mt-2">
 	<p class="box">Nutritional Risk Screening – NRS é baseada em estudos clínicos randomizados e recomendada pelo Guideline da ESPEN* para o âmbito hospitalar.</p>
 	*Pontuação = 1: a necessidade proteica está aumentada, mas o Déficit Protéico pode ser recuperado pela alimentação oral ou pelo uso de terapia nutricional oral, na maior parte dos casos.<br>
 	*Pontuação = 2: a necessidade proteica está substancialmente aumentada e o Déficit Proteico pode ser recuperado na maior parte dos casos com terapia nutricional oral/dieta enteral.<br>
