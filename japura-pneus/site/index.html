@@ -4,11 +4,12 @@
 	<title>Japurá Pneus</title>
 	<meta charset="utf-8">
 	<meta name="viewpoint" content="width=device-width, initial-scale-1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark mynav fixed-top">
-      <div class="container">
+      <div class="form-login">
       <a class="navbar-brand" href="#"><img class="logo-japura" src="assets/imgs/logo-horizontal-white-2.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,6 +43,8 @@
     </nav>
 
     <main role="main">
+
+      <!--CAROUSEL-->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -50,7 +53,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="assets/imgs/slide-japura.png" alt="First slide">
+            <img class="first-slide img-fluid d-block" src="assets/imgs/slide-japura.png" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Japurá Pneus.</h1>
@@ -60,7 +63,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="assets/imgs/slide-pirelli.png" alt="Second slide">
+            <img class="second-slide img-fluid d-block" src="assets/imgs/slide-pirelli.png" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
                 <h1>Revendedor Oficial Pirelli.</h1>
@@ -69,12 +72,10 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide img-fluid d-block" src="assets/imgs/slide3.png" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <p><a class="btn btn-lg btn-dark" href="http://palpitecampeao2018.com.br/" role="button" target="_blank">Saiba mais</a></p>
               </div>
             </div>
           </div>
@@ -88,8 +89,502 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </main>
 
+    <!--Services-->
+    <div class="container marketing">
+      <h1 class="mb-5 item-title">Serviços</h1>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle service-img" src="assets/imgs/oil-change.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="service-title">Troca de óleo</h3>
+            <p class="service-details">Os óleos lubrificantes, óleos de motor, ou óleos para motor são substâncias utilizadas para reduzir o ruído, calor e desgaste, lubrificando e aumentando a vida útil dos componentes móveis dos motores.</p>
+            <p class="service-button"><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle service-img" src="assets/imgs/alignment.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="service-title">Alinhamento</h3>
+            <p class="service-details">O alinhamento das rodas em um veículo é a correção geométrica executada no conjunto de elementos que formam a suspensão, a qual permite ao veículo manter sua trajetória. É recomendado alinhamento semestral</p>
+            <p class="service-button"><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle service-img" src="assets/imgs/balancing.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="service-title">Balanceamento</h3>
+            <p class="service-details">Normalmente, o efeito do desbalanceamento de rodas aumenta com a sua velocidade angular (rotação) e pode se tornar crítico quando sua  freqüência induzir fenômeno ressonante no conjunto onde a massa girante esta acoplada.</p>
+            <p class="service-button"><a class="btn btn-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+      
+      <!--Lojas-->
+      <div class="container mt-5 lojas">
+      <h1 class="mb-5 item-title">Nossas Lojas</h1>
+      <div class="row mb-5">
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-djalma">
+              <img class="card-img-top" src="assets/imgs/loja-djalma-batista.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Djalma Batista</h4>
+              <h6 class="card-subtitle text-muted">Manaus - AM</h6>
+            </div>
+            <div class="mask"></div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-silves">
+              <img class="card-img-top" src="assets/imgs/loja-silves.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Silves</h4>
+              <h6 class="card-subtitle text-muted">Manaus - AM</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-castelo-branco">
+              <img class="card-img-top" src="assets/imgs/loja-castelo-branco.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Castelo Branco</h4>
+              <h6 class="card-subtitle text-muted">Manaus - AM</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-torquato">
+              <img class="card-img-top" src="assets/imgs/loja-torquato-tapajos.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Torquato Tapajós</h4>
+              <h6 class="card-subtitle text-muted">Manaus - AM</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-novo-aleixo">
+              <img class="card-img-top" src="assets/imgs/loja-castelo-branco.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Novo Aleixo</h4>
+              <h6 class="card-subtitle text-muted">Manaus - AM</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-truck">
+              <img class="card-img-top" src="assets/imgs/loja-truck.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Truck Center</h4>
+              <h6 class="card-subtitle text-muted">Manaus - AM</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-belem">
+              <img class="card-img-top" src="assets/imgs/loja-belem-nova.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Belém</h4>
+              <h6 class="card-subtitle text-muted">Belém - PA</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-castanhal">
+              <img class="card-img-top" src="assets/imgs/loja-castanhal.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Castanhal</h4>
+              <h6 class="card-subtitle text-muted">Castanhal - PA</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm-1 ml-5"></div>
+        <div class="col-sm-3">
+          <div class="card">]
+            <a href="#" data-toggle="modal" data-target="#details-loja-boa-vista">
+              <img class="card-img-top" src="assets/imgs/loja-boa-vista.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Boa Vista</h4>
+              <h6 class="card-subtitle text-muted">Boa Vista - RR</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-macapa">
+              <img class="card-img-top" src="assets/imgs/loja-macapa-raimundo.png">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Macapá</h4>
+              <h6 class="card-subtitle text-muted">Macapá - AP</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#details-loja-porto-velho">
+              <img class="card-img-top" src="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Porto Velho</h4>
+              <h6 class="card-subtitle text-muted">Porto Velho - RO</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <!--MODAL-->
+
+    <!--Belem-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-belem" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Belém - PA</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-belem-visconde.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Visconde de Souza Franco, 829, Reduto.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Whatsapp:(91) 98384-3424</p>
+                    <p>Whatsapp:(91) 98438-7372</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Castanhal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-castanhal" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Castanhal - PA</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-castanhal.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Presidente Vargas, 4082 - Próximo ao Mateus.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(91)3711-3998</p>
+                    <p>Whatsapp:(91)98416-5044</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Manaus - Djalma-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-djalma" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Djalma Batista | Manaus - AM</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-djalma-batista.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Djalma Batisa, 3333, Chapada.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(92) 3642-1313</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Manaus - Silves-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-silves" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Silves | Manaus - AM</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-silves.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Silves, 39, esquina com Castelo Branco, Cachoeirinha.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(92) 3642-1313</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Manaus - Castelo Branco-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-castelo-branco" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Castelo Branco | Manaus - AM</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-castelo-branco.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Castelo Branco, 916, Cachoeirinha.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(92) 3642-1313</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Manaus - Torquato-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-torquato" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Torquato Tapajós | Manaus - AM</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-torquato-tapajos.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Torquato Tapajós, 7941, Tarumã.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(92) 3642-1313</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Manaus - Novo Aleixo-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-novo-aleixo" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Novo Aleixo | Manaus - AM</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-castelo-branco.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Autaz Mirim, 8877, Novo Aleixo.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(92) 3642-1313</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Truck Center-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-truck" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Truck Center | Manaus - AM</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-truck.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Autaz Mirim, 290, Distrito Industrial I</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(92) 3308-9298</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Boa Vista-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-boa-vista" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Boa Vista - RR</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-boa-vista.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Dr. Paulo Coelho Pereira, São Vicente.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(95) 3624-1123</p>
+                    <p>Whatsapp:(95) 98118-0003</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Macapa-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-macapa" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Macapá - AP</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src="assets/imgs/loja-macapa-raimundo.png"></div>
+                  <div class="col-sm-6">
+                    <p>Av. Raimundo Alvares da Costa, 572, Central</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(96) 98414-2346</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Porto Velho-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="details-loja-porto-velho" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Porto Velho - RO</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6"><img class="img-loja-detail" src=""></div>
+                  <div class="col-sm-6">
+                    <p>Av. Gov. Jorge Teixeira, 1473, São Cristóvão.</p>
+                    <p>CEP: 00000-00</p>
+                    <p>Telefone:(69) 3216-5800</p>
+                    <p>Whatsapp:(92) 98418-5796</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
