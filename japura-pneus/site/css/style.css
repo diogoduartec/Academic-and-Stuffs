@@ -101,3 +101,11 @@ body {
 .service-button {
   text-align: center;
 }
+
+.btn-carousel{
+
+}
+
+@media screen and (max-width: 768px){
+  .carousel-caption p{display:none; visibility: hidden;}
+}
