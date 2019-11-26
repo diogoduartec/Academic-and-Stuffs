@@ -1,0 +1,163 @@
+#:kivy 1.11.1
+
+<ScreenManagement>:
+    InitialScreen:
+    MainScreen:
+    ContactScreen:
+
+<MainScreen>:
+    name: 'mainPage'
+    BoxLayout:
+        orientation: 'vertical'
+        pos: self.parent.pos
+        size: self.parent.size
+
+        BoxLayout:
+            size_hint: (1, .8)
+            canvas.before:
+                Color:
+                    rgba:  (99/255, 165/255, 191/255, 1) 
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        
+            ScrollView:
+                id: scroll
+                do_scroll_x: False
+                do_scroll_y: True
+
+                BoxLayout:
+                    id: message_list
+                    orientation: 'vertical'
+                    pos: self.pos
+                    size: self.size
+                
+        BoxLayout:
+            size_hint: (1, .2)
+            canvas.before:
+                Color:
+                    rgba: (1, 1, 1, 1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+            BoxLayout:
+                TextInput:
+                    id: text_message
+                    size_hint: (.8, 1)
+                Button:
+                    canvas.before:
+                        Color:
+                            rgba:  (16/255, 28/255, 38/255, 1) 
+                        Rectangle:
+                            size: self.size
+                            pos: self.pos
+                    text: "Enviar"
+                    font_size: 24 
+                    size_hint: (.2, 1)
+                    on_release:
+                        root.write_message()
+                    background_color:  (1, 1, 1, 0) 
+
+<InitialScreen>:
+    name: 'initialPage'
+    BoxLayout:
+        orientation: 'vertical'
+        pos: self.parent.pos
+        size: self.parent.size
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        BoxLayout:
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                
+            orientation: 'vertical'
+            padding: [256, 0, 256, 0]
+
+            Label:
+                canvas.before:
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                text: 'Digite um nickname:'
+                font_size: 18
+                color: 0, 0, 0, 1
+                size_hint_y: None
+                height: 30
+
+            TextInput:
+                size_hint_y: None
+                padding_x: 20
+                height: 35
+
+            Button:
+                text: "ENTRAR"
+                size_hint_y: None
+                height: 35
+                on_release:
+                    root.manager.transition.direction = 'up'
+                    app.root.get_screen('contactPage')
+                    app.root.to_contact()
+        
+        BoxLayout:
+            size_hint: (1, .6)
+
+<ContactScreen>:
+    name: 'contactPage'
+    BoxLayout:
+        orientation: 'vertical'
+        pos: self.parent.pos
+        size: self.parent.size
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        BoxLayout:
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                
+            orientation: 'vertical'
+            padding: [256, 0, 256, 0]
+
+            Label:
+                canvas.before:
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                text: 'Para quem deseja enviar mensagem:'
+                font_size: 18
+                color: 0, 0, 0, 1
+                size_hint_y: None
+                height: 30
+
+            TextInput:
+                size_hint_y: None
+                padding_x: 20
+                height: 35
+
+            Button:
+                text: "ENTRAR"
+                size_hint_y: None
+                height: 35
+                on_release:
+                    root.manager.transition.direction = 'up'
+                    app.root.get_screen('mainPage')
+                    app.root.to_main()
+        
+        BoxLayout:
+            size_hint: (1, .6)
+
+<MyLabel@Label>:
+    size_hint_y: None
+    height: 50
+    width: 1024
+    text_size: self.size
+    padding_x: 10
+    halign: 'left'
+    valign: 'top'
